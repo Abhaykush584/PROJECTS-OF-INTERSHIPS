@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculater.css">
+    <title>Calculater</title>
+</head>
+<body>
+    <header class="header"><h1 id="heading"> CALCULATER USING JS</h1></header>
+    <div id="cal">
+        <input type="text" id="display" class="text" >
+           <div class="div">
+            <button class="button" id="symbol" onclick="currentVal='';
+            document.querySelector('#display').value=currentVal">AC</button>
+            <button class="button" id="symbol" onclick="
+            let recentElement = currentVal.slice(-1);                             //string.slice give specific part of string
+            currentVal = currentVal.slice(0, -1);
+            document.querySelector('#display').value=currentVal">DE</button>
+            <button class="button" onclick="currentVal=currentVal+'1';
+            document.querySelector('#display').value=currentVal">1</button>
+            <button class="button" onclick="currentVal=currentVal+'2';
+            document.querySelector('#display').value=currentVal">2</button>
+            <button class="button"  onclick="currentVal= currentVal+'3';
+            document.querySelector('#display').value=currentVal">3</button>
+            <button class="button" id="symbol" onclick="currentVal=currentVal+'+';
+            document.querySelector('#display').value=currentVal">+</button>
+            <button class="button" onclick="currentVal=currentVal+'4';
+            document.querySelector('#display').value=currentVal">4</button>
+            <button class="button" onclick="currentVal=currentVal+'5';
+            document.querySelector('#display').value=currentVal">5</button>
+            <button class="button" id="symbol" onclick="currentVal=currentVal+'-';
+            document.querySelector('#display').value=currentVal">-</button>
+            <button class="button" onclick="currentVal=currentVal+'6';
+            document.querySelector('#display').value=currentVal">6</button>
+            <button class="button" onclick="currentVal=currentVal+'7';
+            document.querySelector('#display').value=currentVal">7</button>
+            <button class="button"id="symbol" onclick="currentVal=currentVal+'*';
+            document.querySelector('#display').value=currentVal">*</button>
+            <button class="button" onclick="currentVal=currentVal+'8';
+            document.querySelector('#display').value=currentVal">8</button>
+            <button class="button" onclick="currentVal=currentVal+'9';
+            document.querySelector('#display').value=currentVal">9</button>
+            <button class="button" id="symbol" onclick="currentVal=currentVal+'.';
+            document.querySelector('#display').value=currentVal">.</button>
+            <button class="button" onclick="currentVal=currentVal+'0';
+            document.querySelector('#display').value=currentVal">0</button>
+            <button class="button" id="symbol" onclick="currentVal=currentVal+'/';
+            document.querySelector('#display').value=currentVal">/</button>
+            <button class="button" id="symbol" onclick="currentVal=currentVal+'%';
+            document.querySelector('#display').value=currentVal">%</button>
+            <button class="button" id="equalsto"
+            onclick= " let result=eval(currentVal);
+            currentVal=result;
+            localStorage.setItem('history',storage(result));
+            document.querySelector('#display').value=currentVal">=</button>
+            <button class="button" id="sy" onclick="console.log(localStorage.getItem('history'));
+            document.querySelector('#display').value=currentVal">his</button>
+           </div>
+    </div>
+    <script>
+        let currentVal='';
+        document.querySelector("#display").value=currentVal;
+         let his=[];
+    function storage(result){
+     for(let i=0;i<his.length;i++){
+        his.push(result);
+     }
+        }
+        
+    </script>
+</body>
+</html>

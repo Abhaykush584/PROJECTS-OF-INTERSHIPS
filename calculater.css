@@ -1,0 +1,80 @@
+ m*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(215, 255, 254);
+}
+#calculater{
+    border: 1px solid rgb(200, 194, 194);
+    border-radius: 10px;
+    width: 200px;
+    background-color: rgb(161, 255, 67);
+}
+#input{
+        width: 86% ;
+        height: 50px;
+        margin: 10px;
+        font-size: 20px;
+}
+.text{
+    box-shadow: 0px 1.5px 0px 0px rgba(103, 104, 104, 0.707);
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+    margin: 3px;
+    flex-wrap: wrap;
+}
+ #cal{
+    width: 200px;
+    border: 2px solid ;
+    border-radius: 10px;
+    margin: 40px 40%;
+     background-color: aliceblue;
+     
+ }
+ #display{
+    margin: 20px;
+    border: 2px solid ;
+ font-size: 20px;
+ width: 75%;
+ height: 30px;
+ }
+ .div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin:2px;
+ }
+ .button{
+    height: 40px;
+    width:40px ;
+    margin: 3px;
+    box-shadow: 0px 1.5px 1.5px 0px rgba(103, 104, 104, 0.707);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ #equalsto{
+    width: 70px;
+    color: darkcyan;
+ }
+ #symbol{
+    color: rgb(12, 150, 150);
+ }
+ #heading{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(45, 100, 203);
+    padding: 10px;
+ }
+ .header{
+    height: 50px;
+    margin: 10px;
+    border-bottom: 1px solid #b6b1b1;
+ }
+ h1:hover{
+     border-bottom: 2px solid red;  
+ }
+ #syn{
+   text-align: center;
+ }
